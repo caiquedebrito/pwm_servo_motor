@@ -1,5 +1,7 @@
 # Controle Servomotor por PWM
 
+![Image](https://github.com/user-attachments/assets/3320ea97-6982-4dde-afbc-9d603654cda6)
+
 ## Apresentação dos resultados
 
 [Vídeo no Youtube](https://youtu.be/jVGhoxXRAHY)
