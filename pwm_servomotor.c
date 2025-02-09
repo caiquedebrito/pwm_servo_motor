@@ -6,6 +6,8 @@
 #define PWM_FREQ 50   // Frequência de 50Hz (Período de 20ms)
 #define PWM_WRAP 20000 // Contagem total do PWM (20ms em microsegundos)
 
+static const WAIT_MS = 5000; // Tempo de espera em milissegundos
+
 // Função para configurar o PWM
 void setup_pwm(uint pin) {
     gpio_set_function(pin, GPIO_FUNC_PWM); // Configura o pino como saída PWM
@@ -37,15 +39,15 @@ int main() {
 
     // Posição 180° (2400µs)
     set_servo_position(SERVO_PIN, 2400);
-    sleep_ms(5000);
+    sleep_ms(WAIT_MS);
 
     // Posição 90° (1470µs)
     set_servo_position(SERVO_PIN, 1470);
-    sleep_ms(5000);
+    sleep_ms(WAIT_MS);
 
     // Posição 0° (500µs)
     set_servo_position(SERVO_PIN, 500);
-    sleep_ms(5000);
+    sleep_ms(WAIT_MS);
 
     // Movimento suave entre 0° e 180° com incremento de 5µs a cada 10ms
     while (1) {
