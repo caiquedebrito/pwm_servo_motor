@@ -6,7 +6,7 @@
 #define PWM_FREQ 50   // Frequência de 50Hz (Período de 20ms)
 #define PWM_WRAP 20000 // Contagem total do PWM (20ms em microsegundos)
 
-static const WAIT_MS = 5000; // Tempo de espera em milissegundos
+static const int WAIT_MS = 5000; // Tempo de espera em milissegundos
 
 // Função para configurar o PWM
 void setup_pwm(uint pin) {
